@@ -44,6 +44,7 @@ predictions = model.predict(x_test)
 
 pick_sample = random.randint(0, len(predictions) - 1)
 
+print("Prediction:")
 print(np.argmax(predictions[pick_sample]))
 plt.imshow(x_test[pick_sample])
 plt.show()
